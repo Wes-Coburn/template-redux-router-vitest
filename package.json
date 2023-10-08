@@ -10,9 +10,12 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "lighthouse-badges": "lighthouse-badges -u https://google.com -o test_results",
+    "lighthouse-badges-single": "lighthouse-badges -u -s https://google.com -o test_results"
   },
   "dependencies": {
+    "@formatjs/icu-messageformat-parser": "^2.6.2",
     "@reduxjs/toolkit": "^1.9.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

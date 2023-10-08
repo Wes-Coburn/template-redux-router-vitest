@@ -25,6 +25,11 @@ jobs:
     steps:
       - lighthouse-check/audit:
           urls: https://www.foo.software,https://www.foo.software/contact
+  lighthouse-badges:
+    executor: node/default
+    steps:
+      - run: npm run lighthouse-badges
+      - run: npm run lighthouse-badges-single
   codecov:
     executor: node/default
     steps:
@@ -44,4 +49,5 @@ workflows:
   analyze:
     jobs:
       - lighthouse
+      - lighthouse-badges
       - codecov

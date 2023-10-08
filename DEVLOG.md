@@ -102,3 +102,28 @@ npm install react-router-dom@6
 - Add to package.json scripts
   - "test:coverage": "cross-env CI=true npm test -- --env=jsdom --coverage",
   - "upload:test-report": "./node_modules/.bin/codecov"
+
+#### Install [Lighthouse-Badges](https://github.com/emazzotta/lighthouse-badges/tree/master)
+
+```shell
+npm i -g lighthouse-badges
+```
+
+##### Add Lighthouse-Badges to CircleCI Workflow
+
+```yml
+// .circleci/config.yml
+lighthouse-badges:
+    executor: node/default
+    steps:
+      - run: npm run lighthouse-badges
+      - run: npm run lighthouse-badges-single
+```
+
+```json
+// package.json
+"scripts": {
+    "lighthouse-badges": "lighthouse-badges -u https://url -o test_results",
+    "lighthouse-badges-single": "lighthouse-badges -u -s https://url -o test_results"
+  },
+```
