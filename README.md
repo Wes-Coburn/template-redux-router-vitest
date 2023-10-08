@@ -1,3 +1,3 @@
-# template-react-redux
+# template-redux-router-vitest
 
 - Uses **JavaScript** (no TypeScript)
