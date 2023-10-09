@@ -1,6 +1,6 @@
 # Template-Redux-Router-Vitest
 
-[@Wes-Coburn](https://github.com/Wes-Coburn) | _See [DEVLOG](DEVLOG.md) for more info_
+[@Wes-Coburn](https://github.com/Wes-Coburn)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7976680a-c64c-4cfd-baae-e186a91e2f3d/deploy-status)](https://app.netlify.com/sites/taupe-meerkat-458fbc/deploys)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Wes-Coburn/template-redux-router-vitest/tree/main.svg?style=shield&circle-token=917a5a89383b187b09385db5d3666cf6c695e967)](https://dl.circleci.com/status-badge/redirect/gh/Wes-Coburn/template-redux-router-vitest/tree/main)
@@ -22,7 +22,8 @@ ___
 
 ### Description
 
-- A template for the front-end of a full-stack [MERN](https://www.mongodb.com/mern-stack) app (MongoDB + Express + React + Node).
+-> A template for a preconfigured React app.
+
 - Uses vanilla JavaScript (no TypeScript).
 - Configured for testing with Vitest.
 - Configured for CI/CD with CircleCI and Netlify.
@@ -30,3 +31,20 @@ ___
 ## Technologies
 
 ### [Vite](https://vitejs.dev/) | [Vitest](https://vitest.dev/) | [React](https://react.dev/) | [Redux](https://redux.js.org/) | [React-Router](https://reactrouter.com/en/main)
+
+### ESLint Configuration
+
+- [eslint-plugin-vitest](https://www.npmjs.com/package/eslint-plugin-vitest)
+- [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb?activeTab=readme)
+
+## Development
+
+### See [DEVLOG](DEVLOG.md) for more info
+
+```shell
+npm i # install packages
+ncu # update packages
+ncu -u # update package.json
+lighthouse-badges -u https://url -o test_results # run lighthouse and create all badges
+lighthouse-badges -s -u https://url -o test_results # run lighthouse and create single badge
+```

@@ -1,26 +1,25 @@
-import reactLogo from "../assets/react.svg";
-import viteLogo from "/vite.svg";
-
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   NavLink,
-} from "react-router-dom";
+} from 'react-router-dom';
+import viteLogo from '../../public/vite.svg';
+import reactLogo from '../assets/react.svg';
 
-import Counter from "../features/Counter";
+import Counter from '../features/Counter';
 
-import ROUTES from "./routes";
-import "./App.css";
+import ROUTES from './routes';
+import './App.css';
 
 export default function App() {
   return (
     <Router>
       <header>
         <h1>Vite + React</h1>
-        <img src={reactLogo} className="logo" />
-        <img src={viteLogo} className="logo" />
+        <img src={reactLogo} alt="react logo" className="logo" />
+        <img src={viteLogo} alt="vite logo" className="logo" />
       </header>
       <nav>
         <ul>
@@ -43,53 +42,47 @@ export default function App() {
       </nav>
 
       <Routes>
-        <Route path="" element={<Route_Default />} />
-        <Route path="/route_1/*" element={<Route_1 />} />
-        <Route path="/route_2/*" element={<Route_2 />} />
-        <Route path="/route_3/*" element={<Route_3 />} />
+        <Route path="" element={<RouteDefault />} />
+        <Route path="/route_1/*" element={<Route1 />} />
+        <Route path="/route_2/*" element={<Route2 />} />
+        <Route path="/route_3/*" element={<Route3 />} />
       </Routes>
     </Router>
   );
 }
 
-function Route_Default() {
+function RouteDefault() {
   return (
-    <React.Fragment>
+    <>
       <h1>Default Route</h1>
       <Counter />
-    </React.Fragment>
+    </>
   );
 }
 
-function Route_1() {
+function Route1() {
   return (
-    <React.Fragment>
-      <Routes>
-        <Route path="" element={<h1>Route 1</h1>} />
-        <Route path="subroute" element={<h1>Route 1 SUBROUTE</h1>} />
-      </Routes>
-    </React.Fragment>
+    <Routes>
+      <Route path="" element={<h1>Route 1</h1>} />
+      <Route path="subroute" element={<h1>Route 1 SUBROUTE</h1>} />
+    </Routes>
   );
 }
 
-function Route_2() {
+function Route2() {
   return (
-    <React.Fragment>
-      <Routes>
-        <Route path="" element={<h1>Route 2</h1>} />
-        <Route path="subroute" element={<h1>Route 2 SUBROUTE</h1>} />
-      </Routes>
-    </React.Fragment>
+    <Routes>
+      <Route path="" element={<h1>Route 2</h1>} />
+      <Route path="subroute" element={<h1>Route 2 SUBROUTE</h1>} />
+    </Routes>
   );
 }
 
-function Route_3() {
+function Route3() {
   return (
-    <React.Fragment>
-      <Routes>
-        <Route path="" element={<h1>Route 3</h1>} />
-        <Route path="subroute" element={<h1>Route 3 SUBROUTE</h1>} />
-      </Routes>
-    </React.Fragment>
+    <Routes>
+      <Route path="" element={<h1>Route 3</h1>} />
+      <Route path="subroute" element={<h1>Route 3 SUBROUTE</h1>} />
+    </Routes>
   );
 }
