@@ -137,3 +137,9 @@ lighthouse-badges:
     "lighthouse-badges-single": "lighthouse-badges -u -s https://url -o test_results"
   },
 ```
+
+## Install Netlify-CLI
+
+```shell
+npm install netlify-cli --save-dev
+```
