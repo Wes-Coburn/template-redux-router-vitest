@@ -23,7 +23,8 @@
 ## Create Boilerplate with [Vite](https://vitejs.dev/) Template
 
 ```shell
-# using npm 9.8.0
+# using npm v9.8.0
+# using node v18.18.0
 npm create vite@latest template-react-redux -- --template react
 # npm i
 # npm run dev
