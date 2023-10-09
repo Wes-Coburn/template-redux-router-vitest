@@ -11,8 +11,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
-    "lighthouse-badges": "lighthouse-badges -u https://google.com -o test_results --chrome-flags='--headless'",
-    "lighthouse-badges-single": "lighthouse-badges -u -s https://google.com -o test_results --chrome-flags='--headless'"
+    "lighthouse-badges": "lighthouse-badges -u https://google.com -o test_results",
+    "lighthouse-badges-single": "lighthouse-badges -u -s https://google.com -o test_results"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.6",
@@ -31,7 +31,6 @@
     "@vitejs/plugin-react": "^4.0.3",
     "@vitest/coverage-v8": "^0.34.6",
     "@vitest/ui": "^0.34.6",
-    "chromium": "^3.0.3",
     "eslint": "^8.45.0",
     "eslint-plugin-jest": "^27.4.2",
     "eslint-plugin-react": "^7.32.2",

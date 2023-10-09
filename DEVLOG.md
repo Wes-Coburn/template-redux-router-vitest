@@ -112,6 +112,15 @@ npm i -g lighthouse-badges
 
 ##### Add Lighthouse-Badges to CircleCI Workflow
 
+> **REMOVED FROM WORKFLOW DUE TO CIRCLECI ERROR:**
+
+```shell
+template-redux-router-vitest@0.0.1 lighthouse-badges
+lighthouse-badges -u https://google.com -o test_results
+
+Error: The CHROME_PATH environment variable must be set to a Chrome/Chromium executable no older than Chrome stable.
+```
+
 ```yml
 // .circleci/config.yml
 lighthouse-badges:

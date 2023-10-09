@@ -50,5 +50,4 @@ workflows:
   analyze:
     jobs:
       - lighthouse
-      - lighthouse-badges
       - codecov
