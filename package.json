@@ -11,8 +11,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
-    "lighthouse-badges": "lighthouse-badges -u --chrome-flags='--headless' https://google.com -o test_results",
-    "lighthouse-badges-single": "lighthouse-badges --chrome-flags='--headless' -u -s https://google.com -o test_results"
+    "lighthouse-badges": "lighthouse-badges -u https://google.com -o test_results --chrome-flags='--headless'",
+    "lighthouse-badges-single": "lighthouse-badges -u -s https://google.com -o test_results --chrome-flags='--headless'"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.6",
