@@ -14,6 +14,11 @@ ___
 ___
 ___
 
+## Inspiration
+
+- [CI/CD with React](https://medium.com/front-end-weekly/ci-cd-with-react-f4af73618d57)
+- [Lighthouse with CircleCI](https://www.freecodecamp.org/news/how-to-use-lighthouse-in-circleci/)
+
 ## Overview
 
 1. [Build Tools](#build-tools)
