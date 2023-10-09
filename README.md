@@ -1,6 +1,6 @@
 # Template-Redux-Router-Vitest
 
-[@Wes-Coburn](https://github.com/Wes-Coburn)
+[@Wes-Coburn](https://github.com/Wes-Coburn) | See [DEVLOG](DEVLOG.md) for more info
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7976680a-c64c-4cfd-baae-e186a91e2f3d/deploy-status)](https://app.netlify.com/sites/taupe-meerkat-458fbc/deploys)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Wes-Coburn/template-redux-router-vitest/tree/main.svg?style=shield&circle-token=917a5a89383b187b09385db5d3666cf6c695e967)](https://dl.circleci.com/status-badge/redirect/gh/Wes-Coburn/template-redux-router-vitest/tree/main)
@@ -15,7 +15,6 @@ ___
 [![Lighthouse Performance Badge](./test_results/lighthouse_performance.svg)](https://developer.chrome.com/docs/lighthouse/performance/)
 [![Lighthouse PWA Badge](./test_results/lighthouse_pwa.svg)](https://developer.chrome.com/docs/lighthouse/pwa/)
 [![Lighthouse SEO Badge](./test_results/lighthouse_seo.svg)](https://developer.chrome.com/docs/lighthouse/seo/)
-___
 ___
 
 ## Inspiration
@@ -38,15 +37,3 @@ ___
 
 - [eslint-plugin-vitest](https://www.npmjs.com/package/eslint-plugin-vitest)
 - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb?activeTab=readme)
-
-## Development
-
-### See [DEVLOG](DEVLOG.md) for more info
-
-```shell
-npm i # install packages
-ncu # update packages
-ncu -u # update package.json
-lighthouse-badges -u https://url -o test_results # run lighthouse and create all badges
-lighthouse-badges -s -u https://url -o test_results # run lighthouse and create single badge
-```
