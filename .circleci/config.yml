@@ -19,9 +19,11 @@ jobs:
     steps:
       - run: echo "this is the test job"
   deploy-netlify:
-    docker:
-      - image: cimg/base:2023.03
+    executor: node/default
     steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
       - run: npm run netlify:deploy
   lighthouse:
     executor: lighthouse-check/default
