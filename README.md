@@ -1,8 +1,6 @@
 # Template-Redux-Router-Vitest
 
-**[See [DEVLOG](DEVLOG.md) for more info]**
-
-[@Wes-Coburn](https://github.com/Wes-Coburn)
+[@Wes-Coburn](https://github.com/Wes-Coburn) | _See [DEVLOG](DEVLOG.md) for more info_
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7976680a-c64c-4cfd-baae-e186a91e2f3d/deploy-status)](https://app.netlify.com/sites/taupe-meerkat-458fbc/deploys)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Wes-Coburn/template-redux-router-vitest/tree/main.svg?style=shield&circle-token=917a5a89383b187b09385db5d3666cf6c695e967)](https://dl.circleci.com/status-badge/redirect/gh/Wes-Coburn/template-redux-router-vitest/tree/main)
@@ -20,36 +18,15 @@ ___
 
 ## Inspiration
 
-- [CI/CD with React](https://medium.com/front-end-weekly/ci-cd-with-react-f4af73618d57)
-- [Lighthouse with CircleCI](https://www.freecodecamp.org/news/how-to-use-lighthouse-in-circleci/)
-
-## Overview
-
-1. [Build Tools](#build-tools)
-2. [Frameworks](#frameworks)
-3. [Testing](#testing)
+### [CI/CD with React](https://medium.com/front-end-weekly/ci-cd-with-react-f4af73618d57) | [Lighthouse with CircleCI](https://www.freecodecamp.org/news/how-to-use-lighthouse-in-circleci/)
 
 ### Description
 
-A template for a full-stack [MERN](https://www.mongodb.com/mern-stack) app (MongoDB + Express + React + Node).
+- A template for the front-end of a full-stack [MERN](https://www.mongodb.com/mern-stack) app (MongoDB + Express + React + Node).
+- Uses vanilla JavaScript (no TypeScript).
+- Configured for testing with Vitest.
+- Configured for CI/CD with CircleCI and Netlify.
 
-### Wireframe
+## Technologies
 
-[Figma Wireframe](https://)
-
-## Build Tools
-
-- [Vite](https://vitejs.dev/)
-
-## Frameworks
-
-- [React](https://react.dev/)
-- [Redux](https://redux.js.org/)
-- [React-Router](https://reactrouter.com/en/main)
-- [Express](https://expressjs.com/)
-
-## Testing
-
-- [Vitest](https://)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+### [Vite](https://vitejs.dev/) | [Vitest](https://vitest.dev/) | [React](https://react.dev/) | [Redux](https://redux.js.org/) | [React-Router](https://reactrouter.com/en/main)

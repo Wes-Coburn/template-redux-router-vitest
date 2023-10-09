@@ -122,15 +122,16 @@ npm install react-router-dom@6
 > - **REMOVED FROM WORKFLOW DUE TO CIRCLECI ERROR - USE CLI ONLY**
 
 ```shell
-# ERROR MESSAGE
-template-redux-router-vitest@0.0.1 lighthouse-badges
-lighthouse-badges -u https://google.com -o test_results
-
-Error: The CHROME_PATH environment variable must be set to a Chrome/Chromium executable no older than Chrome stable.
+npm i -g lighthouse-badges
 ```
 
 ```shell
-npm i -g lighthouse-badges
+# console
+template-redux-router-vitest@0.0.1 lighthouse-badges
+lighthouse-badges -u https://google.com -o test_results
+
+# ERROR MESSAGE
+Error: The CHROME_PATH environment variable must be set to a Chrome/Chromium executable no older than Chrome stable.
 ```
 
 #### Add Lighthouse-Badges to CircleCI Workflow
