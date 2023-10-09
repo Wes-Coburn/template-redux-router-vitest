@@ -24,7 +24,6 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: npm
-      - run: npm run build
       - run: npm run netlify:deploy
   lighthouse:
     executor: lighthouse-check/default
