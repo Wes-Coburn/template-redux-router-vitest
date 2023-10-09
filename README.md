@@ -17,17 +17,17 @@ ___
 [![Lighthouse SEO Badge](./test_results/lighthouse_seo.svg)](https://developer.chrome.com/docs/lighthouse/seo/)
 ___
 
-## Inspiration
+## Description
 
-### [CI/CD with React](https://medium.com/front-end-weekly/ci-cd-with-react-f4af73618d57) | [Lighthouse with CircleCI](https://www.freecodecamp.org/news/how-to-use-lighthouse-in-circleci/)
-
-### Description
-
--> A template for a preconfigured React app.
+-> A template for a React + Vite app.
 
 - Uses vanilla JavaScript (no TypeScript).
 - Configured for testing with Vitest.
 - Configured for CI/CD with CircleCI and Netlify.
+
+### Inspiration
+
+#### [CI/CD with React](https://medium.com/front-end-weekly/ci-cd-with-react-f4af73618d57) | [Lighthouse with CircleCI](https://www.freecodecamp.org/news/how-to-use-lighthouse-in-circleci/)
 
 ## Technologies
 
