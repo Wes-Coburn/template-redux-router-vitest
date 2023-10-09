@@ -24,7 +24,7 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: npm
-      - run: npm run build:circleci
+      - run: npm run build
       - run: npm run deploy:netlify
   lighthouse:
     executor: lighthouse-check/default
