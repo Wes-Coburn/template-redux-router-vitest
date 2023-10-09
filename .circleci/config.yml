@@ -1,4 +1,4 @@
-# CircleCI config file!
+# CircleCI config file
 version: 2.1
 
 orbs:

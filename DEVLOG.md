@@ -143,3 +143,20 @@ lighthouse-badges:
 ```shell
 npm install netlify-cli --save-dev
 ```
+
+### Configured Netlify Deployment
+
+> Disabled automatic deployment on Netlify
+> Added deployment step to circle config
+
+```yml
+# .circleci/config.yml
+deploy-netlify:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run: npm run build
+      - run: npm run netlify:deploy
+```
