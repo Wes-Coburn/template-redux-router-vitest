@@ -18,6 +18,7 @@ export default function App() {
   return (
     <Router>
       <header>
+        <h1>Vite + React</h1>
         <img src={reactLogo} className="logo" />
         <img src={viteLogo} className="logo" />
       </header>
