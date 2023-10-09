@@ -1,3 +1,5 @@
+import { describe, it, expect } from "vitest";
+
 import counterReducer, {
   increment,
   decrement,
@@ -19,16 +21,16 @@ describe("counter reducer", () => {
 
   it("should handle increment", () => {
     const actual = counterReducer(initialState, increment());
-    expect(actual.value).toEqual(4);
+    expect(actual.value).toBe(4);
   });
 
   it("should handle decrement", () => {
     const actual = counterReducer(initialState, decrement());
-    expect(actual.value).toEqual(2);
+    expect(actual.value).toBe(2);
   });
 
   it("should handle incrementByAmount", () => {
     const actual = counterReducer(initialState, incrementByAmount(2));
-    expect(actual.value).toEqual(5);
+    expect(actual.value).toBe(5);
   });
 });

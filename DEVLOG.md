@@ -45,24 +45,19 @@ npm install -D @vitest/ui
 }
 ```
 
-## Fix [ESLint](https://www.npmjs.com/package/eslint-plugin-jest) Error
-
-> - **WATCH: This fix is unclear, as replacing 'plugin:jest/recommended' with any nonsense also works (eslint error?)**
-> - [Stack Overflow Answer](https://stackoverflow.com/questions/55807824/describe-is-not-defined-when-installing-jest)
-> - [NPM Docs](https://www.npmjs.com/package/eslint-plugin-jest)
+## Install [ESLint-Plugin-Vitest](https://www.npmjs.com/package/eslint-plugin-vitest) Error
 
 ```shell
-npm install -D eslint-plugin-jest
+npm install -D eslint-plugin-vitest
 ```
 
 ```cjs
 // .eslintrc.cjs
+plugins: ['vitest'],
 extends: [
-    'plugin:jest/recommended'
+    'plugin:vitest/recommended'
   ],
 
-//plugins: ['jest'], // included by extending
-//env: { "jest/globals": true }, // included by extending
 ```
 
 ## Install [React-Redux](https://react-redux.js.org/) and [Redux-Toolkit](https://redux-toolkit.js.org/)

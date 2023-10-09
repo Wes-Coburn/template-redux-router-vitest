@@ -8,11 +8,13 @@ orbs:
 
 # Define the jobs we want to run for this project
 jobs:
-  lint-code:
-    docker:
-      - image: cimg/base:2023.03
+  lint:
+    executor: node/default
     steps:
-      - run: echo "this is the lint-code job"
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run: npm run lint
   build:
     executor: node/default
     steps:
@@ -23,6 +25,9 @@ jobs:
   test:
     executor: node/default
     steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
       - run: npm test
   deploy-netlify:
     executor: node/default
@@ -47,10 +52,10 @@ jobs:
 workflows:
   lint_build_test_deploy:
     jobs:
-      - lint-code
+      - lint
       - build:
           requires:
-            - lint-code
+            - lint
       - test:
           requires:
             - build
