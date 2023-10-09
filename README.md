@@ -1,5 +1,9 @@
 # Template-Redux-Router-Vitest
 
+**[See [DEVLOG](DEVLOG.md) for more info]**
+
+[@Wes-Coburn](https://github.com/Wes-Coburn)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7976680a-c64c-4cfd-baae-e186a91e2f3d/deploy-status)](https://app.netlify.com/sites/taupe-meerkat-458fbc/deploys)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Wes-Coburn/template-redux-router-vitest/tree/main.svg?style=shield&circle-token=917a5a89383b187b09385db5d3666cf6c695e967)](https://dl.circleci.com/status-badge/redirect/gh/Wes-Coburn/template-redux-router-vitest/tree/main)
 ___
