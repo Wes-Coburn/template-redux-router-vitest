@@ -29,9 +29,12 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run: npm test
-  deploy-netlify:
+  deploy:
     executor: node/default
     steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
       - run: npm run deploy:netlify
   lighthouse:
     executor: lighthouse-check/default
@@ -59,7 +62,7 @@ workflows:
       - test:
           requires:
             - build
-      - deploy-netlify:
+      - deploy:
           requires:
             - test
   analyze:
