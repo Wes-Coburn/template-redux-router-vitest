@@ -104,22 +104,24 @@ npm install react-router-dom@6
   - "test:coverage": "cross-env CI=true npm test -- --env=jsdom --coverage",
   - "upload:test-report": "./node_modules/.bin/codecov"
 
-#### Install [Lighthouse-Badges](https://github.com/emazzotta/lighthouse-badges/tree/master)
+### Install [Lighthouse-Badges](https://github.com/emazzotta/lighthouse-badges/tree/master)
+
+> - **REMOVED FROM PROJECT DUE TO CIRCLECI ERROR**
+> - To use, run the 2 scripts below manually
 
 ```shell
-npm i -g lighthouse-badges
-```
-
-##### Add Lighthouse-Badges to CircleCI Workflow
-
-> **REMOVED FROM WORKFLOW DUE TO CIRCLECI ERROR:**
-
-```shell
+# ERROR MESSAGE
 template-redux-router-vitest@0.0.1 lighthouse-badges
 lighthouse-badges -u https://google.com -o test_results
 
 Error: The CHROME_PATH environment variable must be set to a Chrome/Chromium executable no older than Chrome stable.
 ```
+
+```shell
+npm i -g lighthouse-badges
+```
+
+#### Add Lighthouse-Badges to CircleCI Workflow
 
 ```yml
 // .circleci/config.yml

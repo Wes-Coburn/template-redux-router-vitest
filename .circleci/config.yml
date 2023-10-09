@@ -8,37 +8,31 @@ orbs:
 
 # Define the jobs we want to run for this project
 jobs:
+  lint-code:
+    docker:
+      - image: cimg/base:2023.03
+    steps:
+      - run: echo "this is the lint-code job"
   build:
-    docker:
-      - image: cimg/base:2023.03
-    steps:
-      - run: echo "this is the build job"
-  test:
-    docker:
-      - image: cimg/base:2023.03
-    steps:
-      - run: echo "this is the test job"
-  deploy-netlify:
     executor: node/default
     steps:
       - checkout
       - node/install-packages:
           pkg-manager: npm
       - run: npm run build
+  test:
+    executor: node/default
+    steps:
+      - run: npm test
+  deploy-netlify:
+    executor: node/default
+    steps:
       - run: npm run deploy:netlify
   lighthouse:
     executor: lighthouse-check/default
     steps:
       - lighthouse-check/audit:
           urls: https://www.foo.software,https://www.foo.software/contact
-  lighthouse-badges:
-    executor: node/default
-    steps:
-      - checkout
-      - node/install-packages:
-          pkg-manager: npm
-      - run: npm run lighthouse-badges
-      - run: npm run lighthouse-badges-single
   codecov:
     executor: node/default
     steps:
@@ -51,13 +45,18 @@ jobs:
 
 # Orchestrate our job run sequence
 workflows:
-  build_and_test:
+  lint_build_test_deploy:
     jobs:
-      - build
-      - test
-  deploy:
-    jobs:
-      - deploy-netlify
+      - lint-code
+      - build:
+          requires:
+            - lint-code
+      - test:
+          requires:
+            - build
+      - deploy-netlify:
+          requires:
+            - test
   analyze:
     jobs:
       - lighthouse
