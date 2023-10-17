@@ -5,7 +5,7 @@ import {
   Routes,
   NavLink,
 } from 'react-router-dom';
-import viteLogo from '../../public/vite.svg';
+import viteLogo from '../../vite.svg';
 import reactLogo from '../assets/react.svg';
 
 import Counter from '../features/Counter';

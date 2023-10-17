@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+ul li {
+  display: inline;
+  margin: 1rem;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
