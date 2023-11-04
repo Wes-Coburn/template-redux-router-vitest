@@ -14,6 +14,10 @@ ___
 - Configured for testing with Vitest.
 - Configured for CI/CD with CircleCI and Netlify.
 
+## Deployment
+
+### https://taupe-meerkat-458fbc.netlify.app/
+
 ### Inspiration
 
 #### [CI/CD with React](https://medium.com/front-end-weekly/ci-cd-with-react-f4af73618d57) | [Lighthouse with CircleCI](https://www.freecodecamp.org/news/how-to-use-lighthouse-in-circleci/)
